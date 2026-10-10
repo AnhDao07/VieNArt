@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Khoản & Đăng Nhập - VieNArt</title>
+    <link rel="stylesheet" href="../CSS/1.css">
+</head>
+<body>
+
+    <header class="DauTrang">
+        <div class="KhungChung DauTrangHop">
+            <div class="LogoThuongHieu">
+                <h1>VieNArt</h1>
+                <p>Vietnamese Folk Art Gallery</p>
+            </div>
+
+            <div class="KhuVucCongCu">
+                <form class="HopTimKiem" action="shop.html" method="get" target="_blank">
+                    <input type="text" placeholder="Tìm kiếm tranh dân gian, nghệ nhân...">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+                <div class="KhuVucNguoiDung">
+                    <a href="dangnhap.html" class="LienKetNut">Đăng nhập</a>
+                    <a href="giohang.html" class="LienKetNut LienKetGioHang" target="_blank">Giỏ hàng (0)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="ThanhDieuHuong">
+        <div class="KhungChung">
+            <ul class="DanhSachMenu">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li class="MucCon">
+                    <a href="shop.html" target="_blank">Cửa hàng</a>
+                    <ul class="MenuXo">
+                        <li><a href="shop.html#DongHo" target="_blank">Tranh Đông Hồ</a></li>
+                        <li><a href="shop.html#HangTrong" target="_blank">Tranh Hàng Trống</a></li>
+                        <li><a href="shop.html#KimHoang" target="_blank">Tranh Kim Hoàng</a></li>
+                        <li><a href="shop.html#BoSuuTap" target="_blank">Bộ sưu tập Tết</a></li>
+                    </ul>
+                </li>
+                <li class="MucCon">
+                    <a href="dichvu.html" target="_blank">Dịch vụ</a>
+                    <ul class="MenuXo">
+                        <li><a href="dichvu.html#BanTranh" target="_blank">Bán tranh truyền thống</a></li>
+                        <li><a href="dichvu.html#ThueTranh" target="_blank">Thuê tranh sự kiện</a></li>
+                        <li><a href="dichvu.html#TuVan" target="_blank">Tư vấn phong thủy</a></li>
+                        <li><a href="dichvu.html#Commission" target="_blank">Đặt vẽ theo yêu cầu</a></li>
+                        <li><a href="dichvu.html#SuKien" target="_blank">Workshop in khắc gỗ</a></li>
+                    </ul>
+                </li>
+                <li class="MucCon">
+                    <a href="gioithieu.html" target="_blank">Về chúng tôi</a>
+                    <ul class="MenuXo">
+                        <li><a href="gioithieu.html#LaGi" target="_blank">Là gì?</a></li>
+                        <li><a href="gioithieu.html#ViSao" target="_blank">Vì sao?</a></li>
+                        <li><a href="gioithieu.html#NhuTheNao" target="_blank">Như thế nào?</a></li>
+                        <li><a href="dichvu.html" target="_blank">Các dịch vụ của VieNArt</a></li>
+                    </ul>
+                </li>
+                <li><a href="tintuc.html" target="_blank">Art Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="KhungChinh">
+        <section class="KhungChung" style="padding-top: 50px; max-width: 480px;">
+            
+            <div id="HopDangNhap" class="TheDichVu" style="padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+                <h2 style="font-size: 22px; text-align: center; margin-bottom: 8px;">Đăng Nhập Tài Khoản</h2>
+                <p style="font-size: 13px; text-align: center; color: #666; margin-bottom: 25px;">Truy cập bộ sưu tập tranh yêu thích và theo dõi đơn hàng</p>
+
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+                    <button type="button" class="NutAnDeXem" style="background-color: #ffffff; color: #333; border: 1px solid #ccc; box-shadow: none;">Đăng nhập với Google</button>
+                    <button type="button" class="NutAnDeXem" style="background-color: #ffffff; color: #333; border: 1px solid #ccc; box-shadow: none;">Đăng nhập với Facebook</button>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 20px; font-size: 12px; color: #999;">
+                    <span>— HOẶC DÙNG EMAIL —</span>
+                </div>
+
+                <form action="../index.html" method="get">
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-size: 13px; margin-bottom: 6px; font-weight: 500;">Email tài khoản</label>
+                        <input type="email" required placeholder="nhapemail@example.com" style="width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; outline: none;">
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-size: 13px; margin-bottom: 6px; font-weight: 500;">Mật khẩu</label>
+                        <input type="password" required placeholder="••••••••" style="width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; outline: none;">
+                    </div>
+
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 20px; font-size: 13px;">
+                        <a href="#HopQuenMatKhau" onclick="document.getElementById('HopQuenMatKhau').style.display='block'; document.getElementById('HopDangNhap').style.display='none';" style="color: #666; text-decoration: underline;">Quên mật khẩu?</a>
+                    </div>
+
+                    <button type="submit" class="NutAnDeXem" style="width: 100%; padding: 12px; font-size: 14px; text-align: center; cursor: pointer;">Đăng Nhập Ngay</button>
+                </form>
+
+                <div style="text-align: center; margin-top: 25px; font-size: 13px; border-top: 1px solid #eee; padding-top: 15px;">
+                    Chưa có tài khoản? 
+                    <a href="#HopDangKy" onclick="document.getElementById('HopDangKy').style.display='block'; document.getElementById('HopDangNhap').style.display='none';" style="font-weight: 700; color: #d35400;">Tạo tài khoản mới</a>
+                </div>
+            </div>
+
+            <div id="HopDangKy" class="TheDichVu" style="display: none; padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+                <h2 style="font-size: 22px; text-align: center; margin-bottom: 8px;">Tạo Tài Khoản Mới</h2>
+                <p style="font-size: 13px; text-align: center; color: #666; margin-bottom: 25px;">Đăng ký thành viên VieNArt để nhận ưu đãi tranh Tết</p>
+
+                <form action="dangnhap.html" method="get">
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-size: 13px; margin-bottom: 6px; font-weight: 500;">Họ và tên</label>
+                        <input type="text" required placeholder="Nguyễn Văn A" style="width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; outline: none;">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-size: 13px; margin-bottom: 6px; font-weight: 500;">Email</label>
+                        <input type="email" required placeholder="email@example.com" style="width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; outline: none;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 13px; margin-bottom: 6px; font-weight: 500;">Mật khẩu</label>
+                        <input type="password" required placeholder="••••••••" style="width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; outline: none;">
+                    </div>
+                    <button type="submit" class="NutAnDeXem" style="width: 100%; padding: 12px; font-size: 14px; text-align: center; cursor: pointer;">Hoàn Tất Đăng Ký</button>
+                </form>
+
+                <div style="text-align: center; margin-top: 25px; font-size: 13px; border-top: 1px solid #eee; padding-top: 15px;">
+                    Đã có tài khoản? 
+                    <a href="dangnhap.html" onclick="document.getElementById('HopDangNhap').style.display='block'; document.getElementById('HopDangKy').style.display='none';" style="font-weight: 700; color: #111;">Quay lại Đăng nhập</a>
+                </div>
+            </div>
+
+            <div id="HopQuenMatKhau" class="TheDichVu" style="display: none; padding: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+                <h2 style="font-size: 22px; text-align: center; margin-bottom: 8px;">Quên Mật Khẩu</h2>
+                <p style="font-size: 13px; text-align: center; color: #666; margin-bottom: 25px;">Nhập email để nhận liên kết khôi phục tài khoản</p>
+
+                <form action="dangnhap.html" method="get">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-size: 13px; margin-bottom: 6px; font-weight: 500;">Email đã đăng ký</label>
+                        <input type="email" required placeholder="email@example.com" style="width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; outline: none;">
+                    </div>
+                    <button type="submit" class="NutAnDeXem" style="width: 100%; padding: 12px; font-size: 14px; text-align: center; cursor: pointer;">Gửi Email Khôi Phục</button>
+                </form>
+
+                <div style="text-align: center; margin-top: 25px; font-size: 13px; border-top: 1px solid #eee; padding-top: 15px;">
+                    <a href="dangnhap.html" onclick="document.getElementById('HopDangNhap').style.display='block'; document.getElementById('HopQuenMatKhau').style.display='none';" style="font-weight: 700; color: #111;">Quay lại Đăng nhập</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="ChanTrang">
+        <div class="KhungChung">
+            <div class="LuoiChanTrang">
+                <div class="CotChanTrang">
+                    <h3 class="TieuDeChanTrang">VieNArt</h3>
+                    <p class="DongThongTin">Không gian kết nối, bảo tồn và phát triển tranh dân gian truyền thống Việt Nam, đưa giá trị văn hóa ngàn năm vào nhịp sống hiện đại.</p>
+                    <p class="DongThongTin">Hotline: +84 28 3822 9999</p>
+                    <p class="DongThongTin">Email: lienhe@vienart.vn</p>
+                </div>
+                <div class="CotChanTrang">
+                    <h3 class="TieuDeChanTrang">DÀNH CHO KHÁCH HÀNG</h3>
+                    <ul class="DanhSachLienKet">
+                        <li><a href="dichvu.html#BanTranh" target="_blank">Bán tranh & Sưu tầm</a></li>
+                        <li><a href="dichvu.html#ThueTranh" target="_blank">Thuê tranh sự kiện</a></li>
+                        <li><a href="dichvu.html#TuVan" target="_blank">Tư vấn nghệ thuật</a></li>
+                        <li><a href="dichvu.html#Commission" target="_blank">Đặt tranh sáng tác</a></li>
+                        <li><a href="dichvu.html#SuKien" target="_blank">Sự kiện & Workshop</a></li>
+                    </ul>
+                </div>
+                <div class="CotChanTrang">
+                    <h3 class="TieuDeChanTrang">VỀ CHÚNG TÔI</h3>
+                    <ul class="DanhSachLienKet">
+                        <li><a href="gioithieu.html#LaGi" target="_blank">Câu chuyện VieNArt</a></li>
+                        <li><a href="gioithieu.html#ViSao" target="_blank">Sứ mệnh gìn giữ di sản</a></li>
+                        <li><a href="shop.html" target="_blank">Danh mục tác phẩm</a></li>
+                        <li><a href="tintuc.html" target="_blank">Tin tức & Triển lãm</a></li>
+                        <li><a href="gioithieu.html" target="_blank">Đồng hành cùng nghệ nhân</a></li>
+                    </ul>
+                </div>
+                <div class="CotChanTrang">
+                    <h3 class="TieuDeChanTrang">HỖ TRỢ & THÔNG TIN</h3>
+                    <ul class="DanhSachLienKet">
+                        <li><a href="gioithieu.html" target="_blank">Chính sách bảo mật</a></li>
+                        <li><a href="gioithieu.html" target="_blank">Điều khoản dịch vụ</a></li>
+                        <li><a href="gioithieu.html" target="_blank">Chính sách đổi trả & bảo quản</a></li>
+                        <li><a href="gioithieu.html" target="_blank">Câu hỏi thường gặp (FAQs)</a></li>
+                        <li><a href="dichvu.html" target="_blank">Dành cho kiến trúc sư & thiết kế</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="DongBanQuyen">
+                <p>&copy; 2026 VieNArt. All rights reserved. Nền tảng tôn vinh tranh dân gian Việt Nam.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/1.js"></script>
+</body>
+</html>
